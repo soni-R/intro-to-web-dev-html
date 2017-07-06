@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Image As Links</title>
+	<style>
+		.roundedCorners{
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-border-radius: 20px;
+			background-color:black;
+	
+		}
+	</style>
+	</head>
+	
+	<body>
+		<!-- link using image -->
+		
+		<a href="http://www.nba.com"><img src="img/basketball.JPG" alt="basketball resting on the court"
+		 style="width:350px; height:225px;" border="none;" /></a>
+		 
+		<!-- displays link only on the specified map on image -->
+		<img src="img/basketball_small.JPG" alt="smaller version of basketball on the court" class ="roundedCorners" border="30" usemap="#teamlink" />
+		
+		<map name="teamlink">
+			<area shape="circle" coords="138,90,75" alt="team link"	href="http://www.nba.com" />	</map>
+		
+		
+		
+	</body>
+
+</html>
