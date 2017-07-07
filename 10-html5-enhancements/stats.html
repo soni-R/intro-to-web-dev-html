@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>HomeTown Players Pro Basketball Team</title>
+		<style>
+			.playerStatsTable {
+				border: 1px black solid;
+				border-spacing:12px;
+				width:650px;
+			}
+			
+			.playerStatsTable th {
+				border: 1px black solid;
+				padding: 15px 15px 15px 15px;
+				background-color:#454545;
+				color:white;
+			}
+			
+			.playerStatsTable td {
+				border: 1px #3a5f6e solid;
+				padding: 7px 7px 7px 7px;
+			}
+			
+	        .altRow {
+				background-color:#c3c3c3;
+			}
+			
+			.asideTable {
+				border-spacing:2px;
+				width:300px;
+			}
+			
+			.asideTable th {
+				border: 1px #333377 solid;
+				padding: 5px 5px 5px 5px;
+				width:150px;
+				background-color:#333377;
+				color:white;
+			}
+			
+			.asideTable td {
+				border: 1px #768976 solid;
+				width:150px;
+				text-align:center;
+			}
+			
+			/* alignment */
+			#mainHeader {
+				width:100%;
+				height:45px;
+				min-width:750px;
+				font-family:Verdana, Geneva, Tahoma, sans-serif;
+				font-weight:bold;
+				font-size:15pt;
+			}
+			
+			#mainHeader h2 {
+				padding:3px 3px 3px 3px;
+			}
+			
+			nav {
+				padding:0px 0px 0px 0px;
+				margin:0px 0px 0px 0px;
+				width:100%;
+				height:45px;
+				float:left;
+				min-width:750px;
+				background-color:#c3c3c3;
+			}
+			
+			nav ul{
+				list-style:none;
+				margin:none;
+				padding:0px 0px 0px 0px;
+				margin:0px 0px 0px 0px;
+				min-width:600px;
+				display:block;
+			}
+			
+			nav li {
+				display:inline-block;
+				width:75px;
+			}
+			
+			nav li a{
+				text-decoration:none;
+				display:block;
+				background:#333377;
+				color:white;
+				text-align:center;
+				padding:10px 2px 10px 2px;
+				height:22px;
+			}
+			
+			nav li a:hover{
+				background:#555599;
+			}
+			
+			nav li a:active{
+				color:#efefee;
+			}
+			
+			nav li a.selected{
+				color:yellow;
+				background-color:#222266;
+			}
+			
+			#playerStatHeader{
+				width:650px;
+				background:purple;
+			}
+			#playerStatHeaderDetails{
+				width:650px;
+				color:yellow;
+				font-family:Verdana, Geneva, Tahoma, sans-serif;
+				font-weight:bold;
+				font-size:22px;
+				padding:3px 3px 3px 3px;
+			}
+			
+			#mainContent {
+				width:100%;
+				height:850px;;
+			}
+			
+			#mainContent article{
+				width:650px;
+				height:auto;
+				float:left;
+				background-color:#ccccee;
+				margin:10px 10px 10px 10px;
+			}
+			
+			#mainContent aside{
+				float:left;
+				min-width:200px;
+				height:auto;
+			}
+			
+			.padAside{
+				margin:2px 2px 2px 10px;
+				padding:25px 2px 0px 2px;
+			}
+			
+			#teamStatHeader{
+				width:644px;
+				background:purple;
+				color:yellow;
+				font-family:Verdana, Geneva, Tahoma, sans-serif;
+				font-weight:bold;
+				font-size:22px;
+				padding:3px 3px 3px 3px;
+			}
+
+			#teamAsideAd {
+				width:650px;
+				height:150px;
+				background-color:#a7a7a7;
+			}
+			
+			#teamAsideFooter {
+				padding:2px 2px 2px 2px;
+				background-color:#b9b9b9;
+			}
+			
+			#teamStatsFooter {
+				width:646px;
+				padding:2px 2px 2px 2px;
+				background-color:#78235a;
+				color:white;
+			}
+			
+			#teamStatsFooter p {
+				padding:5px 5px 5px 5px;
+			}
+			
+			#teamStatsFooter span {
+				padding:3px 3px 3px 3px;
+			}
+			
+			#teamstatstablediv{
+				padding:10px 10px 10px 10px;
+			}
+			
+			#mainFooter{
+				width:100%;
+				min-height:45px;
+				float:left;
+				background-color:#c3c3c3;	
+				padding:14px 0px 14px 10px;		
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header id="mainHeader">
+			<h2 style="background:purple; color:yellow;">HomeTown Players Pro Basketball Team</h2>
+		</header>		
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="stats.html" class="selected">Team Stats</a></li>
+				<li><a href="coach.html">Coach</a></li>
+				<li><a href="arena.html">Arena</a></li>
+				<li><a href="tickets.html">Tickets</a></li>
+			</ul>	
+		</nav>
+		<section id="mainContent">
+			<!-- here we have the players stats -->
+			<article id="playerStatList">
+				<header id="playerStatHeader">
+					<span id="playerStatHeaderDetails">Player Stats For This Season</span>
+				</header>
+				<!-- Player Name |  Shots  | Points | FreeThrows | Rebounds | Steals | Assists -->
+				<table class="playerStatsTable">
+					<tr>
+						<th>Player Name</th>
+						<th>Shots</th>
+						<th>Points</th>
+						<th style="width: 84px">Free Throws</th>
+						<th>Rebounds</th>
+						<th>Steals</th>
+						<th>Assists</th>
+					</tr>
+					<tr>
+						<td>Jason Bourne</td>
+						<td>32</td>
+						<td>18</td>
+						<td style="width: 84px">7/10</td>
+						<td>6</td>
+						<td>2</td>
+						<td>4</td>
+					</tr>
+					<tr class="altRow">
+						<td>Tony Stark</td>
+						<td>24</td>
+						<td>17</td>
+						<td style="width: 84px">6/12</td>
+						<td>5</td>
+						<td>8</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>David Banner</td>
+						<td>32</td>
+						<td>18</td>
+						<td style="width: 84px">7/10</td>
+						<td>6</td>
+						<td>2</td>
+						<td>4</td>
+					</tr>
+					<tr class="altRow">
+						<td>Peter Parker</td>
+						<td>24</td>
+						<td>17</td>
+						<td style="width: 84px">6/12</td>
+						<td>5</td>
+						<td>8</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>Barry Allen</td>
+						<td>32</td>
+						<td>18</td>
+						<td style="width: 84px">7/10</td>
+						<td>6</td>
+						<td>2</td>
+						<td>4</td>
+					</tr>
+					<tr class="altRow">
+						<td>Bruce Wayne</td>
+						<td>24</td>
+						<td>17</td>
+						<td style="width: 84px">6/12</td>
+						<td>5</td>
+						<td>8</td>
+						<td>13</td>
+					</tr>
+				</table>
+			</article>
+			<aside id="playerDetails" class="asideTable padAside">
+				<table>
+					<tr>
+						<th>Player Name</th>
+						<td>Average</td>
+					</tr>
+					<tr>
+						<th>Shots</th>
+						<td>34</td>
+					</tr>
+					<tr>					
+						<th>Points</th>
+						<td>21</td>
+					</tr>
+					<tr>
+						<th style="width: 84px">Free Throws</th>
+						<td>6.5/10</td>
+					</tr>
+					<tr>
+						<th>Rebounds</th>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th>Steals</th>
+						<td>7</td>
+					</tr>
+					<tr>
+						<th>Assists</th>
+						<td>12</td>
+					</tr>
+				</table>
+			</aside>
+			<!-- and here we have the team stats -->
+			<article id="teamStatDetails">
+				<header id="teamStatHeader">
+					<span id="teamStatHeaderDetails">Team Stats For This Season</span>
+				</header>
+				
+				<div id="teamstatstablediv">
+					<table id="teamStatTable" class="asideTable">
+						<tr>
+							<th>Shots</th>
+							<th>Points</th>
+							<th style="width: 84px">Free Throws</th>
+							<th>Rebounds</th>
+							<th>Steals</th>
+							<th>Assists</th>
+						</tr>
+						<tr>
+							<td>1250</td>
+							<td>750</td>
+							<td style="width: 84px">194/227</td>
+							<td>551</td>
+							<td>256</td>
+							<td>754</td>
+						</tr>
+					</table>
+				</div>
+				<aside id="teamAsideAd">
+					<span>Team Stats brought you by:</span>
+					<footer id="teamAsideFooter">
+						[Insert Ad Here]	
+					</footer>
+				</aside>
+				<footer id="teamStatsFooter">
+					<p>HomeTown Players Pro Basketball Team is located in hometown, USA</p>
+					<span>Our Phone: 777-888-9999</span>
+				</footer>
+			</article>
+		</section>
+		<div style="clear:both;"></div>
+		<footer id="mainFooter">
+			<span>&copy;2014 HomewTown Players Pro Basketball Team</span>
+		</footer>
+	</body>
+</html>
