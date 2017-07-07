@@ -110,6 +110,44 @@
 				</table>
 			</article>
 			
+			<!-- use an aside for secondary content related to the primary content
+				 -- for example, the average player details 
+			     aside does not have to be a sidebar and may be contained within an element
+			     additionally, content in aside should be able to be removed without affecting
+			     the section the aside is associated with-->
+			<aside id="playerDetails" class="asideTable padAside">
+				<table>
+					<tr>
+						<th>Player Name</th>
+						<td>Average</td>
+					</tr>
+					<tr>
+						<th>Shots</th>
+						<td>34</td>
+					</tr>
+					<tr>					
+						<th>Points</th>
+						<td>21</td>
+					</tr>
+					<tr>
+						<th style="width: 84px">Free Throws</th>
+						<td>6.5/10</td>
+					</tr>
+					<tr>
+						<th>Rebounds</th>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th>Steals</th>
+						<td>7</td>
+					</tr>
+					<tr>
+						<th>Assists</th>
+						<td>12</td>
+					</tr>
+				</table>
+			</aside>
+			
 			<!-- and here we have the team stats -->
 			<article id="teamStatDetails">
 				<header id="teamStatHeader">
@@ -136,6 +174,10 @@
 						</tr>
 					</table>
 				</div>
+				<!-- and another aside -->
+				<aside id="teamAsideAd">
+					<span>Team Stats brought you by:</span>
+				</aside>
 			</article>
 		</section>
 	</body>
