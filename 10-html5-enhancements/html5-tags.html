@@ -28,8 +28,115 @@
 		     You can have more than one section tab per page, but each one should
 		     represent a complete set of content and should not be related 
 		     Think of this like a section in a newspaper, i.e. sports or editorial section -->
+		     
 		<section id="mainContent">
-			<p>Main content goes here</p>
+		
+			<!-- an article should be a section of content
+			     that contains an entire piece of information - 
+			     like an article in the newspaper (i.e. a sports article in the sports section 
+			     or an editorial in the editorial section)
+			     NOTE: Since once again we'll have multiple articles, we should give each an id -->
+			
+			<!-- here we have the players stats -->
+			<article id="playerStatList">
+				<header id="playerStatHeader">
+					<span id="playerStatHeaderDetails">Player Stats For This Season</span>
+				</header>
+				<!-- Player Name |  Shots  | Points | FreeThrows | Rebounds | Steals | Assists -->
+				<table class="playerStatsTable">
+					<tr>
+						<th>Player Name</th>
+						<th>Shots</th>
+						<th>Points</th>
+						<th style="width: 84px">Free Throws</th>
+						<th>Rebounds</th>
+						<th>Steals</th>
+						<th>Assists</th>
+					</tr>
+					<tr>
+						<td>Jason Bourne</td>
+						<td>32</td>
+						<td>18</td>
+						<td style="width: 84px">7/10</td>
+						<td>6</td>
+						<td>2</td>
+						<td>4</td>
+					</tr>
+					<tr class="altRow">
+						<td>Tony Stark</td>
+						<td>24</td>
+						<td>17</td>
+						<td style="width: 84px">6/12</td>
+						<td>5</td>
+						<td>8</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>David Banner</td>
+						<td>32</td>
+						<td>18</td>
+						<td style="width: 84px">7/10</td>
+						<td>6</td>
+						<td>2</td>
+						<td>4</td>
+					</tr>
+					<tr class="altRow">
+						<td>Peter Parker</td>
+						<td>24</td>
+						<td>17</td>
+						<td style="width: 84px">6/12</td>
+						<td>5</td>
+						<td>8</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>Barry Allen</td>
+						<td>32</td>
+						<td>18</td>
+						<td style="width: 84px">7/10</td>
+						<td>6</td>
+						<td>2</td>
+						<td>4</td>
+					</tr>
+					<tr class="altRow">
+						<td>Bruce Wayne</td>
+						<td>24</td>
+						<td>17</td>
+						<td style="width: 84px">6/12</td>
+						<td>5</td>
+						<td>8</td>
+						<td>13</td>
+					</tr>
+				</table>
+			</article>
+			
+			<!-- and here we have the team stats -->
+			<article id="teamStatDetails">
+				<header id="teamStatHeader">
+					<span id="teamStatHeaderDetails">Team Stats For This Season</span>
+				</header>
+				
+				<div id="teamstatstablediv">
+					<table id="teamStatTable" class="asideTable">
+						<tr>
+							<th>Shots</th>
+							<th>Points</th>
+							<th style="width: 84px">Free Throws</th>
+							<th>Rebounds</th>
+							<th>Steals</th>
+							<th>Assists</th>
+						</tr>
+						<tr>
+							<td>1250</td>
+							<td>750</td>
+							<td style="width: 84px">194/227</td>
+							<td>551</td>
+							<td>256</td>
+							<td>754</td>
+						</tr>
+					</table>
+				</div>
+			</article>
 		</section>
 	</body>
 </html>
